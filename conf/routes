@@ -1,0 +1,3 @@
+# Type  URL         Controller
+###################################################################
+GET     /phones    controllers.PhoneController.getPhones
