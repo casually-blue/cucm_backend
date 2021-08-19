@@ -1,3 +1,11 @@
 # Type  URL         Controller
 ###################################################################
-GET     /phones    controllers.PhoneController.getPhones
+GET /$url<.*> controllers.RoutingController.route(url, method = "get", request: Request)
+PUT /$url<.*> controllers.RoutingController.route(url, method = "put", request: Request)
+HEAD /$url<.*> controllers.RoutingController.route(url, method = "head", request: Request)
+POST /$url<.*> controllers.RoutingController.route(url, method = "post", request: Request)
+PATCH /$url<.*> controllers.RoutingController.route(url, method = "patch", request: Request)
+DELETE /$url<.*> controllers.RoutingController.route(url, method = "delete", request: Request)
+OPTIONS /$url<.*> controllers.RoutingController.route(url, method = "options", request: Request)
+
+

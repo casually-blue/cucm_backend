@@ -11,6 +11,9 @@ dependencies {
     implementation("com.typesafe.play:play-guice_2.12:2.8.8")
     implementation("io.github.casually-blue:cucm-11:1.6")
     implementation("com.sun.xml.ws:jaxws-rt:2.3.3")
+
+    implementation("com.microsoft.graph:microsoft-graph:5.0.0")
+    implementation("com.azure:azure-identity:1.2.5")
 }
 
 repositories {

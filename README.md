@@ -8,7 +8,7 @@ It requires `npm` and JDK 11 to run. To execute it follow these commands.
 $ cd frontend
 $ npm install
 $ npm run start
-# In a seperate Terminal run:
+# In a separate Terminal run:
 $ cd play_backend
 $ ./gradlew runPlay
 ```

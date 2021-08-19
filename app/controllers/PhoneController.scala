@@ -1,12 +1,11 @@
 package controllers {
-  import com.google.inject.Inject
-  import play.mvc._
-  import io.github.casuallyblue.cucm._
-  import play.mvc.Results.ok
-  import play.libs.Json
-  import utils.AXLClient
 
-  import java.util
+  import com.google.inject.Inject
+  import io.github.casuallyblue.cucm._
+  import play.libs.Json
+  import play.mvc.{Controller, Result}
+  import play.mvc.Results.ok
+  import utils.AXLClient
 
   class PhoneController @Inject()(client: AXLClient) extends Controller {
     def getPhones: Result = {
@@ -16,6 +15,7 @@ package controllers {
             this.setName("%")
           })
       }
+
       val resp = client.client.listPhone(req).getReturn.getPhone
 
       ok(Json.toJson(resp))
