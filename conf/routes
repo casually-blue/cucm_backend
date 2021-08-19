@@ -1,5 +1,4 @@
-# Type  URL         Controller
-###################################################################
+# Push routing to controller
 GET /$url<.*> controllers.RoutingController.route(url, method = "get", request: Request)
 PUT /$url<.*> controllers.RoutingController.route(url, method = "put", request: Request)
 HEAD /$url<.*> controllers.RoutingController.route(url, method = "head", request: Request)
